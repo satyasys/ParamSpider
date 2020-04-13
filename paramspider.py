@@ -54,9 +54,9 @@ def main():
     final_uris = extractor.param_extract(response , args.level , black_list)
     save_it.save_func(final_uris , args.output , args.domain)
     
-    print("\u001b[32;1m")
-    print('\n'.join(final_uris))
-    print("\u001b[0m")
+    #print("\u001b[32;1m\n")
+    #print('\n'.join(final_uris).encode("utf-8"))
+    #print("\u001b[0m")
 
     
     print(f"\n\u001b[32m[+] Total unique urls found : {len(final_uris)}\u001b[31m")
